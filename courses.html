@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | CYBER SPARK</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-color: var(--light-gray);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-red);
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .course-card {
+                flex-direction: row;
+            }
+
+            .course-image {
+                flex: 1;
+                min-height: 100%;
+            }
+
+            .course-content {
+                flex: 1.5;
+            }
+        }
+
+        .course-image {
+            background-color: #eee;
+            position: relative;
+        }
+
+        .course-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .course-tag {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--primary-red);
+            color: white;
+            padding: 5px 15px;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        .course-content {
+            padding: 40px;
+        }
+
+        .course-content h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .course-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .course-meta i {
+            color: var(--primary-red);
+            margin-right: 5px;
+        }
+
+        .course-features {
+            margin-bottom: 30px;
+        }
+
+        .course-features li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .course-features li i {
+            color: #25d366;
+            /* Green for checkmarks */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-brands fa-youtube" style="color: var(--primary-red);"></i>
+                CYBER<span>SPARK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Enroll Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Training Programs</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Courses
+            </div>
+        </div>
+    </div>
+
+    <!-- Courses List -->
+    <section class="section-padding">
+        <div class="container">
+
+            <!-- Course 1 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <div class="course-tag">Most Popular</div>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop"
+                        alt="YouTube Mastery">
+                </div>
+                <div class="course-content">
+                    <h2>YouTube Automation Mastery</h2>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 6 Weeks</span>
+                        <span><i class="fa-solid fa-video"></i> 50+ Lessons</span>
+                        <span><i class="fa-solid fa-user-graduate"></i> Beginner to Pro</span>
+                    </div>
+                    <p style="margin-bottom: 20px;">The complete blueprint to starting and scaling a profitable faceless
+                        YouTube channel in 2026. Learn niche selection, content strategy, and monetization.</p>
+                    <ul class="course-features">
+                        <li><i class="fa-solid fa-check-circle"></i> Profitable Niche Research</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Scripting & Voiceover Mastery</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Video Editing for Retention</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Algorithm Secrets</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <div class="course-tag">Advanced</div>
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
+                        alt="Advanced Scaling">
+                </div>
+                <div class="course-content">
+                    <h2>Advanced Scaling & Monetization</h2>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> 4 Weeks</span>
+                        <span><i class="fa-solid fa-video"></i> 30+ Lessons</span>
+                        <span><i class="fa-solid fa-user-graduate"></i> For Existing Creators</span>
+                    </div>
+                    <p style="margin-bottom: 20px;">Take your channel to the next level. Learn how to outsource, build a
+                        team, and maximize your RPM for higher earnings.</p>
+                    <ul class="course-features">
+                        <li><i class="fa-solid fa-check-circle"></i> Building an Automation Team</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Advanced Analytics Deep Dive</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Alternative Monetization Sources</li>
+                        <li><i class="fa-solid fa-check-circle"></i> Multi-Channel Management</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        CYBER<span>SPARK</span>
+                    </a>
+                    <p>Your premier destination for learning and implementing YouTube Automation strategies.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Channel Management</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                        <li><a href="services.html">Thumbnail Design</a></li>
+                        <li><a href="courses.html">Mentorship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" style="color: var(--primary-red);"></i> New York, USA
+                        </li>
+                        <li><i class="fa-solid fa-envelope" style="color: var(--primary-red);"></i> info@cyberspark.com
+                        </li>
+                        <li><i class="fa-solid fa-phone" style="color: var(--primary-red);"></i> +1 234 567 890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 CYBER SPARK. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | CYBER SPARK</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-color: var(--light-gray);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-red);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-top: 3px solid var(--primary-red);
+            position: relative;
+        }
+
+        .quote-icon {
+            font-size: 30px;
+            color: #ffdddd;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .client-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #eee;
+            object-fit: cover;
+        }
+
+        .client-details h4 {
+            margin: 0;
+            color: var(--text-dark);
+            font-size: 18px;
+        }
+
+        .client-details span {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .rating {
+            color: #ffc107;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .review-text {
+            color: #555;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .earnings-badge {
+            margin-top: 15px;
+            display: inline-block;
+            background: #e6fffa;
+            color: #047857;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-brands fa-youtube" style="color: var(--primary-red);"></i>
+                CYBER<span>SPARK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html" class="active">Testimonials</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Enroll Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Success Stories</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Testimonials
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="testimonials-grid">
+                <!-- Review 1 -->
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student" class="client-img">
+                        <div class="client-details">
+                            <h4>Michael R.</h4>
+                            <span>Student Batch #14</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"I had zero video editing skills when I joined. 3 months later, I have 2
+                        monetized channels bringing in passive income. The team at Cyber Spark is the real deal."</p>
+                    <div class="earnings-badge">Earned $2,400+ last month</div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="client-img">
+                        <div class="client-details">
+                            <h4>Sarah Jenkin</h4>
+                            <span>Automation Service Client</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"I hired Cyber Spark to manage my tech channel. The quality of scripts and
+                        edits is international standard. My channel grew from 1k to 50k subs in just 4 months."</p>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Student" class="client-img">
+                        <div class="client-details">
+                            <h4>David K.</h4>
+                            <span>Advanced Course Student</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="review-text">"The module on scaling and outsourcing was a game changer. I've now built a
+                        team of 3 editors and am running 5 channels simultaneously."</p>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-right quote-icon"></i>
+                    <div class="client-info">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Student" class="client-img">
+                        <div class="client-details">
+                            <h4>Emma W.</h4>
+                            <span>Student Batch #18</span>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Best investment I ever made. The mentorship is actually helpful, unlike
+                        other courses where they just give you videos and leave you alone."</p>
+                    <div class="earnings-badge">Earned $1,100+ first month</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        CYBER<span>SPARK</span>
+                    </a>
+                    <p>Your premier destination for learning and implementing YouTube Automation strategies.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Channel Management</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                        <li><a href="services.html">Thumbnail Design</a></li>
+                        <li><a href="courses.html">Mentorship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" style="color: var(--primary-red);"></i> New York, USA
+                        </li>
+                        <li><i class="fa-solid fa-envelope" style="color: var(--primary-red);"></i> info@cyberspark.com
+                        </li>
+                        <li><i class="fa-solid fa-phone" style="color: var(--primary-red);"></i> +1 234 567 890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 CYBER SPARK. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

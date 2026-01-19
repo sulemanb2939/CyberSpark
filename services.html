@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | CYBER SPARK</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-color: var(--light-gray);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .breadcrumb {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-red);
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .service-item {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border-color: #ffdce0;
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: #ddd;
+            position: relative;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 30px;
+        }
+
+        .service-content h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .service-content p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .service-features li {
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .service-features li i {
+            color: var(--primary-red);
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-brands fa-youtube" style="color: var(--primary-red);"></i>
+                CYBER<span>SPARK</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Enroll Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Services
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="services-list">
+                <!-- Service 1 -->
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1593697821252-0c9137d9fc45?q=80&w=1000&auto=format&fit=crop"
+                            alt="Channel Setup">
+                    </div>
+                    <div class="service-content">
+                        <h3>YouTube Channel Setup</h3>
+                        <p>We build your channel from the ground up, ensuring it's optimized for the YouTube algorithm
+                            from day one.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Professional Branding & Art</li>
+                            <li><i class="fa-solid fa-check"></i> SEO Keyword Research</li>
+                            <li><i class="fa-solid fa-check"></i> Optimized Description & Tags</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%; text-align: center;">Get
+                            Started</a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
+                            alt="Video Editing">
+                    </div>
+                    <div class="service-content">
+                        <h3>Professional Video Editing</h3>
+                        <p>High-retention editing that keeps viewers watching. We specialize in faceless/cashcow style
+                            editing.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> engaging Visuals & Stock Footage</li>
+                            <li><i class="fa-solid fa-check"></i> Sound Design & Music</li>
+                            <li><i class="fa-solid fa-check"></i> fast Turnaround Time</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%; text-align: center;">Hire
+                            Editors</a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b7993143a2d?q=80&w=1000&auto=format&fit=crop"
+                            alt="Thumbnail Design">
+                    </div>
+                    <div class="service-content">
+                        <h3>High-CTR Thumbnails</h3>
+                        <p>Thumbnails are the most critical factor for views. Our designs are click-optimized.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Psychology-Based Design</li>
+                            <li><i class="fa-solid fa-check"></i> Vibrant & Eye-Catching</li>
+                            <li><i class="fa-solid fa-check"></i> A/B Testing Ready</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%; text-align: center;">Order
+                            Thumbnails</a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=1000&auto=format&fit=crop"
+                            alt="Complete Automation">
+                    </div>
+                    <div class="service-content">
+                        <h3>Complete Automation (A-Z)</h3>
+                        <p>Sit back and earn. We handle the entire process from ideation to upload.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Topic Research</li>
+                            <li><i class="fa-solid fa-check"></i> Script, Voice, Edit, Thumbnail</li>
+                            <li><i class="fa-solid fa-check"></i> Upload & Management</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%; text-align: center;">Automate
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?q=80&w=1000&auto=format&fit=crop"
+                            alt="Monetization">
+                    </div>
+                    <div class="service-content">
+                        <h3>Monetization & Scaling</h3>
+                        <p>Struggling to hit 4,000 hours? We help you cross the monetization threshold quickly.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Channel Audit</li>
+                            <li><i class="fa-solid fa-check"></i> Growth Strategy</li>
+                            <li><i class="fa-solid fa-check"></i> Revenue Optimization</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="width: 100%; text-align: center;">Start
+                            Scaling</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        CYBER<span>SPARK</span>
+                    </a>
+                    <p>Your premier destination for learning and implementing YouTube Automation strategies.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Channel Management</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                        <li><a href="services.html">Thumbnail Design</a></li>
+                        <li><a href="courses.html">Mentorship</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot" style="color: var(--primary-red);"></i> New York, USA
+                        </li>
+                        <li><i class="fa-solid fa-envelope" style="color: var(--primary-red);"></i> info@cyberspark.com
+                        </li>
+                        <li><i class="fa-solid fa-phone" style="color: var(--primary-red);"></i> +1 234 567 890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 CYBER SPARK. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
